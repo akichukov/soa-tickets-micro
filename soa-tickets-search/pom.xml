@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>mk.ukim.finki</groupId>
-	<artifactId>soa-tickets-users</artifactId>
+	<artifactId>soa-tickets-search</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>soa-tickets-users</name>
-	<description>Users Microservice</description>
+	<name>soa-tickets-search</name>
+	<description>Lucene Microservice</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -46,31 +46,6 @@
 			<artifactId>spring-cloud-starter-eureka-server</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
-        </dependency>
-
-        <!-- Model mapper (similar to AutoMapper in c#) -->
-        <dependency>
-            <groupId>org.modelmapper</groupId>
-            <artifactId>modelmapper</artifactId>
-            <version>1.1.0</version>
-        </dependency>
 	</dependencies>
 
     <dependencyManagement>

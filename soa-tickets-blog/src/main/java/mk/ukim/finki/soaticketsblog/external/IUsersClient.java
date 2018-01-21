@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @FeignClient("soa-tickets-users")
-public interface UsersClient {
+public interface IUsersClient {
     @RequestMapping(method = RequestMethod.GET, value = "/users/{surname}")
     String getName(@PathVariable("surname") String surname);
 }
