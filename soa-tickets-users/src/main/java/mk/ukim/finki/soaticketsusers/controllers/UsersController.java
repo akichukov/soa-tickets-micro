@@ -31,7 +31,7 @@ public class UsersController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     //@PreAuthorize("hasAnyRole('admin')")
     public List<UserViewModel> getAllUsers(Principal principal) {
-        System.out.println(principal.toString());
+        //System.out.println(principal.toString());
         return usersService.getAll();
     }
 
